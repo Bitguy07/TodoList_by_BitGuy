@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <title>To-Do List App</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="h-screen border-box  text-white bg-gray-800">
+    <div class="flex items-center  justify-center h-full">
+
+       <!-- Main div -->
+      <divy class="bg-gray-400 relative mx-2 rounded-xl text-center  space-y-2 max-h-full md:w-1/2">
+            <h1 class="text-3xl pt-4 font-semibold">Todo List</h1>
+
+            <!-- second div -->
+        <div class="p-2 relative max-h-96 overflow-y-auto">
+            <div class="w-full flex bg-gray-600 p-2 rounded-xl justify-between">
+                <!-- Input -->
+                <input type="text" name=""id="todo-input" placeholder="Enter Today's todo's." class="text-black py-2 grow pl-2 focus:outline-none rounded">
+                <!-- Add button -->
+                <button id="btn"  class="pl-10 pr-6 font-semibold">Add</button>
+            </div>
+                <ul class="todo-li pt-2" id="todo-list">
+                <!--                     
+                    <li class=" p-3 bg-gray-600 text-white justify-between flex rounded-xl">
+                        <span class="span1">dnfldnslfndlsa</span>
+                        <span class="span2">
+                        <button class="bg-slate-200 text-slate-500 pl-2 pr-2 pt-[4px] pb-[3px] rounded-full">
+                            <ion-icon name="create-outline"></ion-icon>
+                        </button>
+                        <button class="bg-slate-200 text-slate-500 pl-2 pr-2 pt-[4px] pb-[3px] rounded-full">
+                            <ion-icon name="trash-outline"></ion-icon>
+                        </button>
+                        </span>
+                    </li>
+                -->
+                </ul>
+        </div>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
